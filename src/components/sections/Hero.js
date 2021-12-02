@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
@@ -62,22 +61,19 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Welcome to Securi<span className="text-color-primary">Nets</span>
+              Welcome to Securi<span className="primary">Nets</span>
             </h1>
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="700">
                 Securinets is the first national association for <span className="text-color-primary">cybersecurity</span> in Tunisia.
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
+                
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
                     Get started
                   </Button>
 
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
-                  </Button>
-                </ButtonGroup>
+                  
 
               </div>
             </div>

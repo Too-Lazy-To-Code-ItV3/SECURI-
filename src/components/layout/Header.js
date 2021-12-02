@@ -105,28 +105,31 @@ const Header = ({
                     'header-nav',
                     isActive && 'is-active'
                   )}>
-                <div className="header-nav-inner">
+                <div className="header-nav-inner" >
                   <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Home</Link>
+                      <Link to="/" onClick={closeMenu}>Home</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Forum</Link>
+                      <Link to="/Aboutus" onClick={closeMenu}>About us </Link>
+                    </li>
+                    <li>
+                      <Link to="/contactus" onClick={closeMenu}>Contact </Link>
                     </li>
                   </ul>
                   {!hideSignin &&
                     <ul
-                      className="list-reset header-nav-right"
+                      className="list-reset header-nav-right" background='rgb(164, 177, 205)'
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Register</Link>
+                        <Link to="/Register"  className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Register</Link>
                       </li>
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign Up</Link>
+                        <Link to="/Signup" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign Up</Link>
                       </li>
                     </ul>}
                 </div>
